@@ -136,6 +136,49 @@ header {
 
 /* ---finish Header--- */
 
+/* ---Main--- */
+
+main {
+    margin-top: 70px;
+}
+
+/* introduction section */
+.introduction {
+    text-align: center;
+}
+
+.introduction__desc__img {
+    max-width: 360px;
+    height: 190px;
+    background-size: cover;
+    margin-inline: auto;
+}
+
+.introduction__desc__img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.introduction__desc__message__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    margin-block: 16px;
+}
+
+.introduction__desc__message__text {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 21px;
+    color: var(--desc);
+    padding-inline: 15px;
+}
+
+/*----*/
+
+/* ---finish Main--- */
+
 
 /* responsive */
 @media screen and (min-width : 640px) {
@@ -143,6 +186,31 @@ header {
         padding: 28px 40px;
         font-size: 12px;
         line-height: 24px;
+    }
+
+    main {
+        margin-top: 80px;
+    }
+
+    .introduction__desc__img {
+        max-width: 640px;
+        height: 338px;
+    }
+
+    .introduction__desc__img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .introduction__desc__message__title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .introduction__desc__message__text {
+        font-size: 14px;
+        line-height: 28px;
+        padding-inline: 40px;
     }
 }
 
@@ -157,5 +225,48 @@ header {
     .header__logo-img {
         width: 64px;
         height: 32px;
+    }
+
+    .introduction {
+        margin-block: 31px 191px;
+        margin-inline: 150px 58px;
+    }
+
+    .introductipn__desc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin-inline: auto;
+        direction: ltr;
+        text-align: right;
+    }
+
+    .introduction__desc__message {
+        width: 480px;
+        direction: rtl;
+    }
+
+    .introduction__desc__img {
+        max-width: 580px;
+        height: 306px;
+        margin: 0;
+    }
+
+    .introduction__desc__img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .introduction__desc__message__title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-block: 40px 24px;
+    }
+
+    .introduction__desc__message__text {
+        font-size: 16px;
+        line-height: 28px;
+        padding: 0;
     }
 }
