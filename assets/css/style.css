@@ -215,7 +215,7 @@ main {
 .purchase__tickets__namava__price--del,
 .purchase__tickets__shatel__price--del {
     width: 102px;
-    height: 2px;
+    height: 1px;
     background-color: #D95C5C;
     position: absolute;
     top: 50%;
@@ -224,7 +224,8 @@ main {
 }
 
 .introduction__purchase__packages {
-    margin: 31px 14px 50px;
+    margin-top: 31px;
+    margin-inline: 14px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -264,8 +265,8 @@ main {
 
 .purchase__packages__box__firstPrice__price--del {
     position: absolute;
-    width: 53px;
-    height: 2px;
+    width: 51px;
+    height: 1px;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -312,6 +313,66 @@ main {
 .introduction__purchase__packages__btn--logo {
     margin-right: 12px;
     display: flex;
+}
+
+.introduction__device {
+    padding-top: 50px;
+}
+
+.introduction__device__img {
+    margin-inline: 15px;
+}
+
+.introduction__device__img img {
+    width: 100%;
+}
+
+.introduction__device__desc {
+    margin-inline: 14px;
+    text-align: center;
+}
+
+.introduction__device__desc--title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 16px;
+}
+
+.introduction__device__desc--text {
+    font-size: 12px;
+    line-height: 21px;
+    color: var(--desc);
+    font-weight: 300;
+}
+
+.introduction__device__mov {
+    margin-block: 72px 60px;
+    position: relative;
+}
+
+.introduction__device__mov img {
+    width: 100%;
+}
+
+.introduction__device__playBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(255 255 255 / 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.introduction__device__playBtn svg {
+    width: 20px;
+    height: 20px;
+    fill: #000000;
 }
 
 /*----*/
@@ -403,6 +464,42 @@ main {
     .purchase__packages__box__finalPrice__price {
         line-height: 24px;
     }
+
+    .introduction__device {
+        padding-top: 91px;
+    }
+
+    .introduction__device__img {
+        margin-inline: 40px;
+    }
+
+    .introduction__device__desc {
+        margin-inline: 40px;
+    }
+
+    .introduction__device__desc--title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .introduction__device__desc--text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .introduction__device__mov {
+        margin-block: 99px 61px;
+    }
+
+    .introduction__device__playBtn {
+        width: 60px;
+        height: 60px;
+    }
+
+    .introduction__device__playBtn svg {
+        width: 28px;
+        height: 28px;
+    }
 }
 
 
@@ -420,7 +517,7 @@ main {
 
     .introduction {
         margin-block: 31px 191px;
-        margin-inline: 150px 58px;
+        /* margin-inline: 150px 58px; */
     }
 
     .introductipn__desc {
@@ -428,7 +525,7 @@ main {
         justify-content: center;
         align-items: center;
         gap: 12px;
-        margin-inline: auto;
+        margin-inline: 58px 150px;
         margin-bottom: 191px;
         direction: ltr;
         text-align: right;
@@ -463,9 +560,9 @@ main {
     }
 
     .introduction__purchase {
-        gap: 137px;
+        /* gap: 137px; */
         align-items: start;
-        justify-content: center;
+        justify-content: space-around;
         width: 990px;
         margin-inline: auto;
     }
@@ -540,5 +637,39 @@ main {
         padding-block: 11px;
         font-size: 14px;
         line-height: 28px;
+    }
+
+    .introduction__device {
+        padding-top: 120px;
+    }
+
+    .introduction__device__img {
+        margin-inline: 250px;
+    }
+
+    .introduction__device__desc {
+        margin-inline: 250px;
+    }
+
+    .introduction__device__desc--title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 24px;
+    }
+
+    .introduction__device__desc--text {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 300;
+    }
+
+    .introduction__device__mov {
+        margin-block: 120px 165px;
+        margin-inline: 150px;
+    }
+
+    .introduction__device__playBtn {
+        width: 60px;
+        height: 60px;
     }
 }
