@@ -1,3 +1,5 @@
+//up/down header
+
 const headerElem = document.querySelector('.header')
 let lastScroll = 0;
 
@@ -13,3 +15,4 @@ const showHeaderHandler = () => {
 }
 
 window.addEventListener('scroll', showHeaderHandler)
+
