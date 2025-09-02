@@ -427,6 +427,31 @@ main {
     color: var(--desc);
 }
 
+.introduction__androidTv {
+    margin-bottom: 40px;
+}
+
+.introduction__androidTv img {
+    width: 100%;
+}
+
+
+.introduction__androidTv__desc h3 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    margin-block: 12px 16px;
+    margin-inline: 15px;
+}
+
+.introduction__androidTv__desc p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 21px;
+    margin-inline: 15px;
+    color: var(--desc);
+}
+
 
 
 /*----*/
@@ -595,6 +620,27 @@ main {
     .introduction__remoteControl__desc p {
         margin-inline: 0px;
         font-size: 14px;
+    }
+
+    .introduction__androidTv {
+        margin-bottom: 64px;
+    }
+
+    .introduction__androidTv__desc {
+        width: 66%;
+        margin-inline: auto;
+    }
+
+    .introduction__androidTv__desc h3 {
+        font-size: 16px;
+        margin-block: 0px 16px;
+        margin-inline: 0px;
+    }
+
+    .introduction__androidTv__desc p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-inline: 0px;
     }
 }
 
@@ -804,5 +850,36 @@ main {
     .introduction__remoteControl__desc p {
         font-size: 16px;
         line-height: 28px;
+    }
+
+    .introduction__androidTv {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 0px;
+        /* gap: 112px; */
+    }
+
+    .introduction__androidTv img {
+        width: 630px;
+        height: 427px;
+    }
+
+    .introduction__androidTv__desc {
+        text-align: right;
+        width: auto;
+        margin-inline: 0px;
+    }
+
+    .introduction__androidTv__desc h3 {
+        font-size: 20px;
+        margin-block: 0px 24px;
+    }
+
+    .introduction__androidTv__desc p {
+        width: 480px;
+        font-size: 16px;
+        line-height: 28px;
+        margin-inline: 0px 150px;
     }
 }
