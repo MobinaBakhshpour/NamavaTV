@@ -452,6 +452,111 @@ main {
     color: var(--desc);
 }
 
+.introduction__watchOnline {
+    margin-bottom: 72px;
+}
+
+.introduction__watchOnline img {
+    width: 100%;
+}
+
+.introduction__watchOnline__desc h3 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    padding-inline: 15px;
+    padding-block: 20px 16px;
+}
+
+.introduction__watchOnline__desc p {
+    font-weight: 300;
+    font-size: 12px;
+    color: var(--desc);
+    line-height: 21px;
+    padding-inline: 15px;
+}
+
+/* config section */
+
+.config {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.config__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.config__features {
+    background-color: #121212;
+    padding-inline: 14px;
+}
+
+.config__features__col {
+    padding-top: 20px;
+}
+
+.col2,
+.col3,
+.col4 {
+    display: none;
+}
+
+.config__features__col__line {
+    display: none;
+}
+
+.is-open {
+    display: block;
+}
+
+.active {
+    transform: rotateX(180deg);
+}
+
+.config__features__col h3 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    font-style: normal;
+    padding-bottom: 12px;
+
+}
+
+.config__features__col span {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--desc);
+    padding-bottom: 18px;
+    line-height: 24px;
+}
+
+.config__features__moreBtn {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6EB8FF;
+    cursor: pointer;
+    margin-top: 40px;
+    padding-bottom: 28px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    transition: all 4s ease-in-out 1s;
+}
+
+.config__features__moreBtn svg {
+    width: 20px;
+    height: 20px;
+    transition: all 1s;
+}
+
+
 
 
 /*----*/
@@ -641,6 +746,55 @@ main {
         font-size: 14px;
         line-height: 24px;
         margin-inline: 0px;
+    }
+
+    .introduction__watchOnline__desc {
+        width: 66%;
+        margin-inline: auto;
+    }
+
+    .introduction__watchOnline__desc h3 {
+        font-size: 16px;
+        padding-block: 0px 16px;
+        padding-inline: 0px;
+    }
+
+    .introduction__watchOnline__desc p {
+        font-size: 14px;
+        line-height: 24px;
+        padding-inline: 0px;
+    }
+
+    .config {
+        margin-bottom: 72px;
+    }
+
+    .config__title {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 32px;
+    }
+
+    .config__features {
+        padding-inline: 40px;
+    }
+
+    .config__features__cols {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* column-gap: 20%; */
+    }
+
+    .config__features__col {
+        padding-top: 34px;
+    }
+
+    .col2 {
+        display: block;
+    }
+
+    .config__features__moreBtn {
+        padding-bottom: 38px;
     }
 }
 
@@ -881,5 +1035,78 @@ main {
         font-size: 16px;
         line-height: 28px;
         margin-inline: 0px 150px;
+    }
+
+    .introduction__watchOnline {
+        margin-bottom: 120px;
+    }
+
+    .introduction__watchOnline__desc {
+        width: 42%;
+        margin-top: -110px;
+    }
+
+    .introduction__watchOnline__desc h3 {
+        font-size: 20px;
+        padding-block: 0px 24px;
+    }
+
+    .introduction__watchOnline__desc p {
+        width: 495px;
+        margin-inline: auto;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .config {
+        width: 1180px;
+        margin: 0 auto;
+        margin-bottom: 120px;
+    }
+
+    .config__title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+
+    .config__features {
+        padding-inline: 24px;
+        border-radius: 5px;
+        padding-block: 40px;
+    }
+
+    .config__features__cols {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .config__features__col {
+        padding-top: 0px;
+        width: calc(25% - 34px);
+    }
+
+    .col3,
+    .col4 {
+        display: block;
+    }
+
+    .config__features__col__line {
+        display: block;
+        width: 1px;
+        height: 390px;
+        background-color: #37383E;
+    }
+
+    .config__features__col h3 {
+        line-height: 28px;
+    }
+
+    .config__features__col span {
+        line-height: 28px;
+    }
+
+    .config__features__moreBtn {
+        display: none;
     }
 }
