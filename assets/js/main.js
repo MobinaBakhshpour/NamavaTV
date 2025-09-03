@@ -32,10 +32,31 @@ function initMoreBtn() {
     })
 }
 
+// manage dropdown list of question
+function initAccordion() {
+    const questionElms = document.querySelectorAll(".questions__box__item__question")
+    const answerElms = document.querySelectorAll('.questions__box__item__answer')
+
+    questionElms.forEach((question) => {
+        question.addEventListener("click", event => {
+
+            answerElms.forEach(answer => {
+                if (answer !== event.currentTarget.nextElementSibling) {
+                    answer.classList.remove("show")
+                }
+            })
+            event.currentTarget.nextElementSibling.classList.toggle('show')
+            event.currentTarget.children[1].classList.toggle("active")
+
+        })
+    })
+}
+
 
 function initApp() {
     initHeader()
     initMoreBtn()
+    initAccordion()
 }
 
 document.addEventListener("DOMContentLoaded", initApp)
