@@ -179,14 +179,26 @@ main {
     padding-inline: 15px;
 }
 
-#introduction__purchase__tickets {
+.introduction__purchase--container {
+    margin-inline: 14px;
+}
+
+.introduction__purchase {
+    max-width: 416px;
+    margin-inline: auto;
+}
+
+#introduction__purchase__tickets,
+#purchase__order__tickets {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .purchase__tickets__namava,
-.purchase__tickets__shatel {
+.purchase__tickets__shatel,
+.purchase__order__tickets__namava,
+.purchase__order__tickets__shatel {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -197,7 +209,9 @@ main {
 }
 
 .purchase__tickets__namava img,
-.purchase__tickets__shatel img {
+.purchase__tickets__shatel img,
+.purchase__order__tickets__namava img,
+.purchase__order__tickets__shatel img {
     width: 145px;
     height: 54px;
     max-width: 100%;
@@ -205,17 +219,23 @@ main {
 }
 
 .purchase__tickets__namava__title,
-.purchase__tickets__shatel__title {
+.purchase__tickets__shatel__title,
+.order__tickets__namava__title,
+.order__tickets__shatel__title {
     margin-block: 14px 10px;
 }
 
 .purchase__tickets__namava__price,
-.purchase__tickets__shatel__price {
+.purchase__tickets__shatel__price,
+.order__tickets__namava__price,
+.order__tickets__shatel__price {
     position: relative;
 }
 
 .purchase__tickets__namava__price--del,
-.purchase__tickets__shatel__price--del {
+.purchase__tickets__shatel__price--del,
+.order__tickets__namava__price--del,
+.order__tickets__shatel__price--del {
     width: 102px;
     height: 1px;
     background-color: #D95C5C;
@@ -225,15 +245,17 @@ main {
     transform: translate(-50%, -50%);
 }
 
-.introduction__purchase__packages {
+.introduction__purchase__packages,
+.purchase__order__packages {
     margin-top: 31px;
-    margin-inline: 14px;
+    /* margin-inline: 14px; */
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.introduction__purchase__packages__box {
+.introduction__purchase__packages__box,
+.purchase__order__packages__box {
     display: flex;
     flex-direction: column;
     height: 138px;
@@ -247,7 +269,10 @@ main {
 
 .purchase__packages__box__firstPrice,
 .purchase__packages__box__discount,
-.purchase__packages__box__finalPrice {
+.purchase__packages__box__finalPrice,
+.order__packages__box__firstPrice,
+.order__packages__box__discount,
+.order__packages__box__finalPrice {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -255,17 +280,23 @@ main {
 }
 
 .purchase__packages__box__firstPrice__title,
-.purchase__packages__box__finalPrice__title {
+.purchase__packages__box__finalPrice__title,
+.purchase__packages__box__finalPrice__price,
+.order__packages__box__firstPrice__title,
+.order__packages__box__finalPrice__title,
+.order__packages__box__finalPrice__price {
     font-weight: bold;
     font-size: 14px;
     line-height: 21px;
 }
 
-.purchase__packages__box__firstPrice__price {
+.purchase__packages__box__firstPrice__price,
+.order__packages__box__firstPrice__price {
     position: relative;
 }
 
-.purchase__packages__box__firstPrice__price--del {
+.purchase__packages__box__firstPrice__price--del,
+.order__packages__box__firstPrice__price--del {
     position: absolute;
     width: 51px;
     height: 1px;
@@ -276,13 +307,16 @@ main {
 }
 
 .purchase__packages__box__firstPrice__price,
-.purchase__packages__box__discount__price {
+.purchase__packages__box__discount__price,
+.order__packages__box__firstPrice__price,
+.order__packages__box__discount__price {
     font-weight: normal;
     font-size: 12px;
     line-height: 21px;
 }
 
-.purchase__packages__box__discount__title {
+.purchase__packages__box__discount__title,
+.order__packages__box__discount__title {
     padding: 2px 17px;
     font-weight: bold;
     font-size: 10px;
@@ -291,14 +325,8 @@ main {
     border-radius: 3px;
 }
 
-.purchase__packages__box__finalPrice__title,
-.purchase__packages__box__finalPrice__price {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 21px;
-}
-
-.introduction__purchase__packages__btn {
+.introduction__purchase__packages__btn,
+.purchase__order__packages__btn {
     width: 100%;
     padding-block: 10px;
     color: #121212;
@@ -310,9 +338,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 
-.introduction__purchase__packages__btn--logo {
+.introduction__purchase__packages__btn--logo,
+.purchase__order__packages__btn--logo {
     margin-right: 12px;
     display: flex;
 }
@@ -620,6 +650,25 @@ main {
 }
 
 
+/* purchase */
+.purchase {
+    margin-bottom: 64px;
+    margin-inline: 14px;
+}
+
+.purchase__img {
+    margin-bottom: 67px;
+}
+
+.purchase__img img {
+    width: 100%;
+}
+
+.purchase__order {
+    max-width: 416px;
+    margin-inline: auto;
+}
+
 
 
 /*----*/
@@ -895,6 +944,52 @@ main {
     .question__box__line {
         margin-bottom: 20px;
     }
+
+    .purchase {
+        margin-bottom: 97px;
+    }
+
+    .purchase__order {
+        width: 376px;
+        margin-inline: auto;
+    }
+
+    .purchase__order__tickets__namava,
+    .purchase__order__tickets__shatel {
+        line-height: 24px;
+    }
+
+    .purchase__order__tickets__namava img,
+    .purchase__order__tickets__shatel img {
+        width: 128px;
+        height: 47px;
+    }
+
+    .order__tickets__namava__title,
+    .order__tickets__shatel__title {
+        margin-block: 15px 4px;
+    }
+
+    .purchase__order__packages {
+        margin-top: 32px;
+        margin-inline: 0px;
+    }
+
+    .order__packages__box__firstPrice__title,
+    .order__packages__box__firstPrice__price,
+    .order__packages__box__finalPrice__title,
+    .order__packages__box__finalPrice__price,
+    .order__packages__box__discount__price,
+    .order__packages__box__discount__title {
+        line-height: 24px;
+    }
+
+    .purchase__order__packages__btn {
+        padding-block: 11px;
+        line-height: 24px;
+    }
+
+
 }
 
 
@@ -956,9 +1051,10 @@ main {
 
     .introduction__purchase {
         /* gap: 137px; */
-        align-items: start;
+        align-items: center;
         justify-content: space-around;
         width: 990px;
+        max-width: 100%;
         margin-inline: auto;
     }
 
@@ -1234,4 +1330,95 @@ main {
         font-size: 14px;
         line-height: 28px;
     }
+
+    .purchase {
+        margin-bottom: 176px;
+        width: 1180px;
+        margin-inline: auto;
+        display: flex;
+        direction: ltr;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .purchase__img {
+        margin-bottom: 0;
+    }
+
+    .purchase__img img {
+        width: 476px;
+        height: 300px;
+    }
+
+    .purchase__order {
+        margin-inline: 0;
+        width: 472px;
+        max-width: 100%;
+    }
+
+    #purchase__order__tickets {
+        justify-content: space-between;
+    }
+
+    .purchase__order__tickets__namava,
+    .purchase__order__tickets__shatel {
+        line-height: 28px;
+    }
+
+    .purchase__order__tickets__namava img,
+    .purchase__order__tickets__shatel img {
+        width: 205px;
+        height: 77px;
+    }
+
+    .order__tickets__namava__title,
+    .order__tickets__shatel__title {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .purchase__tickets__namava__price,
+    .purchase__tickets__shatel__price,
+    .order__tickets__namava__price,
+    .order__tickets__shatel__price {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .purchase__order__packages {
+        margin-top: 49px;
+        gap: 18px;
+        direction: rtl;
+    }
+
+    .purchase__order__packages__box {
+        height: 148px;
+        padding: 20px 25px;
+        gap: 14px;
+    }
+
+    .order__packages__box__firstPrice__title,
+    .order__packages__box__finalPrice__title {
+        line-height: 28px;
+        font-size: 16px;
+    }
+
+    .order__packages__box__firstPrice__price,
+    .purchase__order__packages__btn {
+        line-height: 28px;
+        font-size: 14px;
+    }
+
+    .order__packages__box__discount__title {
+        line-height: 28px;
+        padding: 1px 14px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+
+    .order__packages__box__discount__price,
+    .order__packages__box__finalPrice__price {
+        line-height: 28px;
+    }
+
 }
