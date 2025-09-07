@@ -1,7 +1,8 @@
+<br/>
 
 ## 📂 Project Structure
 
-│── index.html
+```
 │── assets/
 │    │── css/
 │        │── style.css
@@ -11,6 +12,8 @@
 │        │── main.js
 │── favicon.ico
 │── README.md
+│── index.html
+```
 
 ---
 
@@ -19,6 +22,7 @@
 2. Make sure the `fonts/` folder includes **IranYekan** font files.  
 
 ---
+<br/>
 
 ## 🛠️ Technologies
 - HTML5  
