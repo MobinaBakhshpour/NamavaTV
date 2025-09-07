@@ -22,7 +22,6 @@
 2. Make sure the `fonts/` folder includes **IranYekan** font files.  
 
 ---
-<br/>
 
 ## 🛠️ Technologies
 - HTML5  
