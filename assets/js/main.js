@@ -15,6 +15,15 @@ function initHeader() {
     })
 }
 
+//showing numbers in Persian
+function toPersianDigits(str) {
+    const selectors = "svg,script,style,code,pre,textarea,input,select,[contenteditable]";
+    const toFarsi = num => num.replace(/\d/g, d => '۰۱۲۳۴۵۶۷۸۹'[d]);
+    document.querySelectorAll("*:not(" + selectors + ")").forEach(el => {
+        el.childNodes.forEach(n => n.nodeType === 3 && (n.nodeValue = toFarsi(n.nodeValue)));
+    });
+}
+
 // show more or less of the config__features
 function initMoreBtn() {
     const moreBtn = document.querySelector(".config__features__moreBtn")
@@ -28,7 +37,6 @@ function initMoreBtn() {
             elm.classList.toggle('is-open')
         })
         titleMoreBtn.innerHTML = isOpen ? "اطلاعات کمتر" : "اطلاعات بیشتر";
-
     })
 }
 
@@ -47,14 +55,13 @@ function initAccordion() {
             })
             event.currentTarget.nextElementSibling.classList.toggle('show')
             event.currentTarget.children[1].classList.toggle("active")
-
         })
     })
 }
 
-
 function initApp() {
     initHeader()
+    toPersianDigits()
     initMoreBtn()
     initAccordion()
 }

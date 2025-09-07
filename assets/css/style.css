@@ -1,8 +1,7 @@
-/* variable */
+/* variables */
 :root {
     --desc: #AAAAAA;
 }
-
 
 /* fonts */
 @font-face {
@@ -81,13 +80,12 @@
 
 body {
     direction: rtl;
-    font-family: iranyekan;
+    font-family: iranyekan, sans-serif;
     color: #FFFFFF;
     background-color: #000000;
 }
 
 /* ---Header--- */
-
 header {
     width: 100%;
     position: fixed;
@@ -137,7 +135,6 @@ header {
 /* ---finish Header--- */
 
 /* ---Main--- */
-
 main {
     margin-top: 70px;
 }
@@ -248,7 +245,6 @@ main {
 .introduction__purchase__packages,
 .purchase__order__packages {
     margin-top: 31px;
-    /* margin-inline: 14px; */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -298,7 +294,7 @@ main {
 .purchase__packages__box__firstPrice__price--del,
 .order__packages__box__firstPrice__price--del {
     position: absolute;
-    width: 51px;
+    width: 45px;
     height: 1px;
     right: 0;
     top: 50%;
@@ -465,7 +461,6 @@ main {
     width: 100%;
 }
 
-
 .introduction__androidTv__desc h3 {
     font-weight: bold;
     font-size: 14px;
@@ -480,10 +475,6 @@ main {
     line-height: 21px;
     margin-inline: 15px;
     color: var(--desc);
-}
-
-.introduction__watchOnline {
-    margin-bottom: 72px;
 }
 
 .introduction__watchOnline img {
@@ -507,10 +498,10 @@ main {
 }
 
 /* config section */
-
 .config {
     width: 100%;
     margin-bottom: 60px;
+    padding-top: 72px;
 }
 
 .config__title {
@@ -526,14 +517,16 @@ main {
     padding-inline: 14px;
 }
 
-.config__features__col {
+.config__features__col> :first-child {
     padding-top: 20px;
 }
 
 .col2,
 .col3,
 .col4 {
-    display: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
 }
 
 .config__features__col__line {
@@ -541,7 +534,7 @@ main {
 }
 
 .is-open {
-    display: block;
+    max-height: 400px;
 }
 
 .active {
@@ -554,7 +547,6 @@ main {
     line-height: 24px;
     font-style: normal;
     padding-bottom: 12px;
-
 }
 
 .config__features__col span {
@@ -577,7 +569,6 @@ main {
     display: flex;
     gap: 6px;
     align-items: center;
-    transition: all 4s ease-in-out 1s;
 }
 
 .config__features__moreBtn svg {
@@ -587,7 +578,6 @@ main {
 }
 
 /* questions section */
-
 .questions {
     width: 100%;
     margin-bottom: 60px;
@@ -626,16 +616,18 @@ main {
     width: 20px;
     height: 20px;
     margin-right: 30px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease;
 }
 
 .questions__box__item__answer {
     font-weight: 300;
     font-size: 10px;
     line-height: 21px;
-    padding-bottom: 16px;
+    padding-bottom: 0px;
     color: #F2F2F2;
-    display: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s ease;
 }
 
 .question__box__line {
@@ -646,11 +638,11 @@ main {
 }
 
 .show {
-    display: block;
+    max-height: 160px;
+    padding-bottom: 16px;
 }
 
-
-/* purchase */
+/* purchase section */
 .purchase {
     margin-bottom: 64px;
     margin-inline: 14px;
@@ -669,12 +661,7 @@ main {
     margin-inline: auto;
 }
 
-
-
-/*----*/
-
 /* ---finish Main--- */
-
 
 /* responsive */
 @media screen and (min-width : 640px) {
@@ -718,6 +705,7 @@ main {
         align-items: center;
         justify-content: center;
         gap: 33px;
+        max-width: 100%;
     }
 
     #introduction__purchase__tickets {
@@ -894,19 +882,19 @@ main {
     .config__features__cols {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* column-gap: 20%; */
     }
 
-    .config__features__col {
+    .config__features__col>:first-child {
         padding-top: 34px;
     }
 
     .col2 {
-        display: block;
+        max-height: 400px;
     }
 
     .config__features__moreBtn {
         padding-bottom: 38px;
+        margin-top: 12px;
     }
 
     .questions {
@@ -938,15 +926,23 @@ main {
     .questions__box__item__answer {
         font-size: 12px;
         line-height: 24px;
-        padding-bottom: 20px;
     }
 
     .question__box__line {
         margin-bottom: 20px;
     }
 
+    .show {
+        max-height: 120px;
+        padding-bottom: 20px;
+    }
+
     .purchase {
         margin-bottom: 97px;
+    }
+
+    .purchase__img {
+        padding-inline: 5%;
     }
 
     .purchase__order {
@@ -988,10 +984,7 @@ main {
         padding-block: 11px;
         line-height: 24px;
     }
-
-
 }
-
 
 @media screen and (min-width : 1280px) {
     .header__nav {
@@ -1003,11 +996,6 @@ main {
     .header__logo-img {
         width: 64px;
         height: 32px;
-    }
-
-    .introduction {
-        margin-block: 31px 191px;
-        /* margin-inline: 150px 58px; */
     }
 
     .introductipn__desc {
@@ -1050,7 +1038,6 @@ main {
     }
 
     .introduction__purchase {
-        /* gap: 137px; */
         align-items: center;
         justify-content: space-around;
         width: 990px;
@@ -1206,7 +1193,6 @@ main {
         align-items: center;
         justify-content: space-around;
         margin-bottom: 0px;
-        /* gap: 112px; */
     }
 
     .introduction__androidTv img {
@@ -1232,10 +1218,6 @@ main {
         margin-inline: 0px 150px;
     }
 
-    .introduction__watchOnline {
-        margin-bottom: 120px;
-    }
-
     .introduction__watchOnline__desc {
         width: 42%;
         margin-top: -110px;
@@ -1257,6 +1239,7 @@ main {
         width: 1180px;
         margin: 0 auto;
         margin-bottom: 120px;
+        padding-top: 120px;
     }
 
     .config__title {
@@ -1276,14 +1259,19 @@ main {
         justify-content: space-between;
     }
 
-    .config__features__col {
+    .config__features__col> :first-child {
         padding-top: 0px;
+    }
+
+    .config__features__col {
         width: calc(25% - 34px);
     }
 
+    .col2,
+    .col1,
     .col3,
     .col4 {
-        display: block;
+        max-height: 396px;
     }
 
     .config__features__col__line {
@@ -1329,6 +1317,10 @@ main {
     .questions__box__item__answer {
         font-size: 14px;
         line-height: 28px;
+    }
+
+    .show {
+        max-height: 140px;
     }
 
     .purchase {
@@ -1409,6 +1401,10 @@ main {
         font-size: 14px;
     }
 
+    .order__packages__box__firstPrice__price--del {
+        width: 53px;
+    }
+
     .order__packages__box__discount__title {
         line-height: 28px;
         padding: 1px 14px;
@@ -1420,5 +1416,4 @@ main {
     .order__packages__box__finalPrice__price {
         line-height: 28px;
     }
-
 }
