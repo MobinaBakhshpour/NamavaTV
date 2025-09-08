@@ -1,75 +1,9 @@
+@import '../fonts/font.css';
+
 /* variables */
 :root {
     --desc: #AAAAAA;
 }
-
-/* fonts */
-@font-face {
-    font-family: iranyekan;
-    font-display: swap;
-    font-style: normal;
-    font-weight: bold;
-    src: url('../fonts/iranyekanwebbold.woff') format('woff');
-}
-
-@font-face {
-    font-family: iranyekan;
-    font-style: normal;
-    font-display: swap;
-    font-weight: 100;
-    src: url('../fonts/iranyekanwebthin.woff') format('woff');
-}
-
-@font-face {
-    font-family: iranyekan;
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    src: url('../fonts/iranyekanweblight.woff') format('woff');
-}
-
-@font-face {
-    font-family: iranyekan;
-    font-style: normal;
-    font-display: swap;
-    font-weight: normal;
-    src: url('../fonts/iranyekanwebregular.woff') format('woff');
-}
-
-@font-face {
-    font-family: iranyekan;
-    font-style: normal;
-    font-display: swap;
-    font-weight: 500;
-    src: url('../fonts/iranyekanwebmedium.woff') format('woff');
-}
-
-@font-face {
-    font-family: iranyekan;
-    font-display: swap;
-    font-style: normal;
-    font-weight: 800;
-    src: url('../fonts/iranyekanwebextrabold.woff') format('woff');
-}
-
-@font-face {
-    font-family: iranyekan;
-    font-style: normal;
-    font-display: swap;
-    font-weight: 900;
-    src: url('../fonts/iranyekanwebblack.woff') format('woff');
-}
-
-@font-face {
-    font-family: iranyekan;
-    font-style: normal;
-    font-weight: 950;
-    font-display: swap;
-    src: url('../fonts/iranyekanwebextrablack.woff') format('woff');
-}
-
-/* ---- */
-
 
 /* Global styles */
 * {
