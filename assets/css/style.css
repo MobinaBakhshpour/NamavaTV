@@ -12,6 +12,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     direction: rtl;
     font-family: iranyekan, sans-serif;
@@ -275,6 +279,8 @@ main {
 .purchase__order__packages__btn--logo {
     margin-right: 12px;
     display: flex;
+    width: 70px;
+    height: 17px;
 }
 
 .introduction__device {
