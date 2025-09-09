@@ -559,15 +559,21 @@ main {
     transition: all 0.5s ease;
 }
 
+/* add for new accordion */
+details[open] summary svg {
+    transform: rotate(180deg);
+}
+
 .questions__box__item__answer {
     font-weight: 300;
     font-size: 10px;
     line-height: 21px;
-    padding-bottom: 0px;
+    padding-bottom: 16px;
     color: #F2F2F2;
+    /* for new accordion
     max-height: 0px;
     overflow: hidden;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease;*/
 }
 
 .question__box__line {
@@ -577,10 +583,11 @@ main {
     margin-bottom: 16px;
 }
 
-.show {
+/* for new accordion
+ .show {
     max-height: 160px;
     padding-bottom: 16px;
-}
+} */
 
 /* purchase section */
 .purchase {
@@ -866,16 +873,18 @@ main {
     .questions__box__item__answer {
         font-size: 12px;
         line-height: 24px;
+        padding-bottom: 20px;
     }
 
     .question__box__line {
         margin-bottom: 20px;
     }
 
+    /* for new accordion
     .show {
         max-height: 120px;
         padding-bottom: 20px;
-    }
+    } */
 
     .purchase {
         margin-bottom: 97px;
@@ -1259,9 +1268,10 @@ main {
         line-height: 28px;
     }
 
+    /* for new accordion 
     .show {
         max-height: 140px;
-    }
+    } */
 
     .purchase {
         margin-bottom: 176px;

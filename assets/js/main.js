@@ -40,31 +40,10 @@ function handelMoreBtnClick() {
     })
 }
 
-// manage dropdown list of question
-function handelAccordion() {
-    const questionElms = document.querySelectorAll(".questions__box__item__question")
-    const answerElms = document.querySelectorAll('.questions__box__item__answer')
-
-    questionElms.forEach((question) => {
-        question.addEventListener("click", event => {
-
-            answerElms.forEach(answer => {
-                if (answer !== event.currentTarget.nextElementSibling) {
-                    answer.classList.remove("show")
-                    answer.previousElementSibling.children[1].classList.remove("active")
-                }
-            })
-            event.currentTarget.nextElementSibling.classList.toggle('show')
-            event.currentTarget.children[1].classList.toggle("active")
-        })
-    })
-}
-
 function initApp() {
     setupHeader()
     convertNumbersToPersian()
     handelMoreBtnClick()
-    handelAccordion()
 }
 
 document.addEventListener("DOMContentLoaded", initApp)
